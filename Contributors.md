@@ -13,6 +13,7 @@ layout: default
 - Nicholas Caro Lopez (Toronto Metropolitan University, Toronto, ON)
 - Venkat Guru Prasad (Toronto Metropolitan University, Toronto, ON)
 - Sayeed Jalil (Toronto Metropolitan University, Toronto, ON)
+- Homa Ahmadinoori (Toronto Metropolitan University, Toronto, ON)
 
 # Funding sources for the SlicerCineTrack project
 
