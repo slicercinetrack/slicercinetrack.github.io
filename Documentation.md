@@ -4,7 +4,7 @@ layout: default
 
 # Documentation
 
-**All of the key features in SlicerCineTrack will be available in the extension’s** <mark style="background-color: lightgray">Inputs</mark> **and** <mark style="background-color: lightgray">Sequences</mark> **section**
+**All of the key features in SlicerCineTrack will be available in the extension’s** <mark style="background-color: lightgray">Inputs</mark> **,** <mark style="background-color: lightgray">Sequences</mark> **and** <mark style="background-color: lightgray">Overlay</mark> **sections.**
 
 <ol>
 <li>Open SlicerCineTrack by selecting the (1) dropdown menu > (2) SlicerCineTrack > (3) Track </li>
