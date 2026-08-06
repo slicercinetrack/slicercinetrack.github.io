@@ -4,9 +4,10 @@
   <head>
     <meta charset='utf-8' />
     <meta http-equiv="X-UA-Compatible" content="chrome=1" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="description" content="SlicerCineTrack" />
     <title>SlicerCineTrack</title>
-    
+
     <link type="text/css" href="css/reset.css" media="all" rel="stylesheet">
     <link type="text/css" href="css/normalize.css" media="all" rel="stylesheet">
     <link type="text/css" href="css/pages.css" media="all" rel="stylesheet">
@@ -14,33 +15,38 @@
   </head>
 
   <body class="marketing pages">
-    
+
     <header>
       <div class="inner">
-        <a class="button left" href="index.html">Home</a>
-        <a class="button left" href="Download.html">Download</a>
-        <a class="button left" href="Documentation">Documentation</a>
-        <a class="button left" href="Feedback">Feedback</a>
-        <a class="button left" href="Tutorial">Tutorial</a>
-        <a class="button left" href="Contributors.html">Contributors</a>
-        <!-- <a class="button left" href="Publications.html">Publications</a> -->
+        <div class="logo"><a href="index.html"><img src="resources/SlicerCineTrack_logo.png" alt="" /> SlicerCineTrack</a></div>
+        <button class="nav-toggle" type="button" aria-label="Toggle navigation" aria-expanded="false" aria-controls="nav-links">
+          <span></span><span></span><span></span>
+        </button>
+        <nav class="nav-links" id="nav-links">
+          <a class="button left" href="index.html">Home</a>
+          <a class="button left" href="Documentation">Documentation</a>
+          <a class="button left" href="Tutorial">Tutorial</a>
+          <a class="button left" href="Feedback">Feedback</a>
+          <a class="button left" href="Contributors.html">About &amp; Publication</a>
+        </nav>
       </div>
     </header>
-    
+
     <section id="content">
       <div class="inner">
       {{ content }}
       </div>
     </section>
-    
+
     <footer>
-      <div class="upper_footer"> <!-- -->
+      <div class="upper_footer">
         <div class="inner clearfix">
           <!--[if IE]><div id="legal_ie"><![endif]-->
             <p>&copy; 2024 Laboratory for Translational Medicine, Toronto Metropolitan University, Toronto, ON, Canada</p>
-        </div><!-- /#legal or /#legal_ie-->
-      </div><!-- class="lower_footer" -->
+        </div>
+      </div>
     </footer>
 
+    <script src="js/interactions.js"></script>
   </body>
 </html>

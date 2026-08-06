@@ -4,82 +4,121 @@
   <head>
     <meta charset='utf-8' />
     <meta http-equiv="X-UA-Compatible" content="chrome=1" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="description" content="SlicerCineTrack" />
     <title>SlicerCineTrack</title>
-    
+
     <link type="text/css" href="css/reset.css" media="all" rel="stylesheet">
     <link type="text/css" href="css/normalize.css" media="all" rel="stylesheet">
     <link type="text/css" href="css/pages.css" media="all" rel="stylesheet">
   </head>
 
   <body class="marketing pages">
-    
+
     <header>
       <div class="inner">
-        <a class="button left" href="index.html">Home</a>
-        <a class="button left" href="Download.html">Download</a>
-        <a class="button left" href="Documentation">Documentation</a>
-        <a class="button left" href="Feedback">Feedback</a>
-        <a class="button left" href="Tutorial">Tutorial</a>
-        <a class="button left" href="Contributors.html">Contributors</a>
-        <!-- <a class="button left" href="Publications.html">Publications</a> -->
+        <div class="logo"><a href="index.html"><img src="resources/SlicerCineTrack_logo.png" alt="" /> SlicerCineTrack</a></div>
+        <button class="nav-toggle" type="button" aria-label="Toggle navigation" aria-expanded="false" aria-controls="nav-links">
+          <span></span><span></span><span></span>
+        </button>
+        <nav class="nav-links" id="nav-links">
+          <a class="button left" href="index.html">Home</a>
+          <a class="button left" href="Documentation">Documentation</a>
+          <a class="button left" href="Tutorial">Tutorial</a>
+          <a class="button left" href="Feedback">Feedback</a>
+          <a class="button left" href="Contributors.html">About &amp; Publication</a>
+        </nav>
       </div>
     </header>
-  
-    <section id="hero-spot">
-      <div class="inner">
-        <h1>SlicerCineTrack</h1>
-        <h2>Open-source target tracking verification toolkit for 3D Slicer
-        </h2>
+
+    <section id="content">
+      <div class="wide">
+
+        <div class="hero-new">
+          <div class="badge">Free &amp; open-source &middot; 3D Slicer extension</div>
+          <h1>Validate your target-tracking through visual inspection.</h1>
+          <p class="lead">SlicerCineTrack plays cine medical images frame-by-frame and overlays the tracked target at the exact position an algorithm predicted, turning raw tracking output into a clear visual check of its accuracy.</p>
+          <div class="btn-row">
+            <a class="btn-primary" href="Documentation">Install extension</a>
+            <a class="btn-outline" href="https://github.com/laboratory-for-translational-medicine/SlicerCineTrack">View on GitHub</a>
+          </div>
+        </div>
+
+        <div class="pillars">
+          <div>
+            <img src="resources/landing_page/SlicerCorner.png" alt="Extends 3D Slicer" />
+            <div class="pillar-label">Extends 3D Slicer</div>
+            <h3>Builds on a dynamic platform</h3>
+            <p>SlicerCineTrack is an extension of <a href="http://www.slicer.org">3D Slicer</a>, a free, open source software for target-tracking verification. SlicerCineTrack can be <a href="Documentation">installed</a> from the 3D Slicer Extension Manager on Windows, Mac, and Linux to leverage the advanced features of 3D Slicer.</p>
+          </div>
+          <div>
+            <img src="resources/landing_page/target_tracking.png" alt="Target Tracking Verification" />
+            <div class="pillar-label">Target Tracking Verification</div>
+            <h3>Collates data for visual analysis</h3>
+            <p>SlicerCineTrack accepts three unique inputs from the user: a set of cine images, a segmentation of the ROI, and transformation data. Users can use the built-in playback controls to go through the series of cine images with the segmentation overlaid on the current image at a position determined on the transform file.</p>
+          </div>
+          <div>
+            <img src="resources/landing_page/open_source.png" alt="Open-source" />
+            <div class="pillar-label">Open-source</div>
+            <h3>SlicerCineTrack is open research</h3>
+            <p>Our development and research work is public, including source code, data, manuals, presentations, etc. SlicerCineTrack is distributed under the BSD-style <a href="http://www.slicer.org/pages/LicenseText">Slicer license</a> allowing academic and commercial use without any restrictions. See our <a href="https://github.com/laboratory-for-translational-medicine/SlicerCineTrack?tab=License-1-ov-file">License</a> site for further details.</p>
+          </div>
+        </div>
+
+        <div class="section-head">
+          <h2>Built for tracking verification</h2>
+          <p>Everything you need to validate, tune, and compare tracking algorithms.</p>
+        </div>
+        <div class="grid-3" style="grid-template-columns:repeat(3,1fr);">
+          <div class="card gold"><h3>Frame-by-frame playback</h3><p>Play or navigate through the sequence of the cine images you loaded with an adjustable frame rate.</p></div>
+          <div class="card gold"><h3>Live segmentation overlay</h3><p>The tracked target overlay locks to the reported coordinates on every frame.</p></div>
+          <div class="card gold"><h3>Customizable overlay</h3><p>Outline or filled, with adjustable color, thickness, and opacity.</p></div>
+          <div class="card gold"><h3>Automatic orientation detection</h3><p>Images are mapped into the correct sagittal, coronal, or axial view automatically.</p></div>
+          <div class="card gold"><h3>Cross-platform</h3><p>Installable from the official 3D Slicer extension catalog on Windows, Mac, and Linux.</p></div>
+          <div class="card gold"><h3>Peer-reviewed &amp; expert-evaluated</h3><p>Published in Computer Methods and Programs in Biomedicine (2024).</p></div>
+        </div>
+
+        <div class="section-head">
+          <h2>Who it's for</h2>
+          <p>Anyone who needs to trust a tracking result before it drives a decision.</p>
+        </div>
+        <div class="grid-4">
+          <div class="card gold"><h3>Medical imaging researchers</h3><p>Validate tracking pipelines before they inform downstream analysis.</p></div>
+          <div class="card gold"><h3>Image-guided therapy specialists</h3><p>Confirm a tracker is following the right target through an intervention.</p></div>
+          <div class="card gold"><h3>Radiotherapy &amp; medical physics researchers</h3><p>Check tumor-tracking accuracy as a patient breathes during treatment.</p></div>
+          <div class="card gold"><h3>Algorithm developers</h3><p>Compare, tune, and refine tracking algorithms against ground truth.</p></div>
+        </div>
+
+        <div class="credit-line">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3 1 8l11 5 9-4.09V17h2V8L12 3Z"/><path d="M5 10.18v4.32c0 1 3 3 7 3s7-2 7-3v-4.32"/></svg>
+          <div>
+            <strong>Toronto Metropolitan University</strong>
+            <span>Developed by the Laboratory for Translational Medicine</span>
+          </div>
+        </div>
+
+        <div class="cta-banner">
+          <div>
+            <h2>Ready to verify your tracking results?</h2>
+            <p>Install SlicerCineTrack from the 3D Slicer Extension Manager, or read the published evaluation behind it.</p>
+          </div>
+          <div class="btn-row">
+            <a class="btn-primary" href="Documentation">Installation guide</a>
+            <a class="btn-outline" href="https://doi.org/10.1016/j.cmpb.2024.108497">Read the paper</a>
+          </div>
+        </div>
+
       </div>
     </section>
 
-    <section id="content">
-      <div class="inner">
-        
-        <ol class="screencap-list">
-          <li id="author">
-              <span><img src="resources/landing_page/SlicerCorner.png" /></span>
-            Extends 3D Slicer
-
-          </li>
-          <li id="theme-it">
-            <span><img src="resources/landing_page/target_tracking.png" /></span>
-            Target Tracking Verification
-          </li>
-          <li id="publish">
-            <span><img src="resources/landing_page/open_source.png" /></span>
-            Open-source
-
-          </li>
-        </ol>
-        
-        <div class="three-column">
-          <h3>Builds on a dynamic platform</h3>
-          <p>SlicerCineTrack is an extension of <a href="http://www.slicer.org">3D Slicer</a>, a free, open source software for Target Tracking verification. SlicerCineTrack can be <a href="Download.html">installed</a> from the 3D Slicer Extension Manager on Windows, Mac, and Linux to leverage the advanced features of 3D Slicer.</p>
-        </div>
-
-        <div class="three-column">
-          <h3>Collates data for visual analysis</h3>
-          <p>SlicerCineTrack accepts three unique inputs from the user: a set of cine images, a segmentation of the ROI, and transformation data. Users can use the built-in playback controls to go through the series of cine images with the segmentation overlaid on the current image at a position determined on the transform file.</p>
-        </div>
-
-        <div class="three-column">
-          <h3>SlicerCineTrack is open research</h3>
-          <p>Our development and research work is public, including source code, data, manuals, presentations, etc. SlicerCineTrack is distributed under the BSD-style <a href="http://www.slicer.org/pages/LicenseText">Slicer license</a> allowing academic and commercial use without any restrictions. See our <a href="https://github.com/laboratory-for-translational-medicine/SlicerCineTrack?tab=License-1-ov-file">License</a> site for further details.</p>
-        </div>
-
-      </div><!-- /.inner -->
-    </section> <!-- class="inner" -->
-    
     <footer>
-      <div class="upper_footer"> <!-- -->
+      <div class="upper_footer">
         <div class="inner clearfix">
-          <!--[if IE]><div id="legal_ie"><![endif]-->
           <p>&copy; 2024 Laboratory for Translational Medicine, Toronto Metropolitan University, Toronto, ON, Canada</p>
-        </div><!-- /#legal or /#legal_ie-->
-      </div><!-- class="lower_footer" -->
+        </div>
+      </div>
     </footer>
 
+    <script src="js/interactions.js"></script>
   </body>
 </html>
