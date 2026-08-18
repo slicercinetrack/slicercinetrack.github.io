@@ -15,7 +15,7 @@ Before accessing or utilizing this data, please refer to and adhere to the TCIA 
 
 Warm regards
 
-**Sample Data set can be download from** [here](https://www.cancerimagingarchive.net/collection/4d-lung/)
+**Sample Data set can be download from** [here](https://drive.google.com/drive/folders/1A3PzCHIua4ExnR30SYjGjLcnUbnd_KFz?usp=sharing)
 
 ## Instruction
 

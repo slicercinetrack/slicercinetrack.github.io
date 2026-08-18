@@ -82,4 +82,4 @@ Hugo, G. D., Weiss, E., Sleeman, W. C., Balik, S., Keall, P. J., Lu, J., & Willi
 
 Before accessing or utilizing this data, please refer to and adhere to the TCIA data use policy.
 
-**Sample Data set can be downloaded from** [here](https://www.cancerimagingarchive.net/collection/4d-lung/)
+**Sample Data set can be downloaded from** [here](https://drive.google.com/drive/folders/1A3PzCHIua4ExnR30SYjGjLcnUbnd_KFz?usp=sharing)
